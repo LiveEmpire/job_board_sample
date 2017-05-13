@@ -1,0 +1,21 @@
+<h1>RailsBridge Corp Open Jobs</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>title</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @jobs.each do |job| %>
+    <tr>
+      <td><%= job.id %></td>
+      <td><%= job.title%></td>
+      <td><%= link_to "view", job %></td>
+    </tr>
+    <%end%>
+  </tbody>
+
+
+</table>
